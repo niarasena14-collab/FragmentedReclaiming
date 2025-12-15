@@ -1,54 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fragmented Reclaiming</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Minimal serif + sans contrast -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      background: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
+      padding: 0;
     }
 
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-      display: grid;
-      gap: 20px;
+    body {
+      background-color: #0e0e0e;
+      color: #f2f2f2;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
     }
 
-    img, video {
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 6rem 1.5rem;
+    }
+
+    .statement {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      letter-spacing: 0.01em;
+    }
+
+    .statement p {
+      margin-bottom: 1.75rem;
+      opacity: 0.95;
+    }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: #888;
+      margin: 4rem auto;
+      opacity: 0.5;
+    }
+
+    .hero-image {
       width: 100%;
-      height: auto;
+      max-width: 1000px;
+      margin: 0 auto;
       display: block;
+      border-radius: 4px;
+    }
+
+    .video-wrapper {
+      max-width: 1000px;
+      margin: 5rem auto 0;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem 5rem;
+      font-size: 0.85rem;
+      opacity: 0.5;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 4rem 1.25rem;
+      }
+      .statement {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<main>
+  <!-- ARTIST STATEMENT -->
+  <section class="statement">
+    <p>The human form; malleable, resistant, powerful in the most mysterious ways. I sometimes wonder how much emotional turmoil and trauma changes the physical make up of your build.</p>
 
-  <!-- Image -->
-  <img src="fragmentedreclaiming.jpg" alt="Fragmented Reclaiming">
+    <p>In this project I will explore my own wounds through my body, further deepening my relationship to myself. As someone who tends to shy away from sharing herself, I want to push myself to complete and total transparency, as on the other side of that is the very artist and human I long to be.</p>
 
-  <!-- Video 1 -->
-  <video controls playsinline>
-    <source src="fragmentedreclaiming1.mp4" type="video/mp4">
-    Your browser does not support video.
-  </video>
+    <p>I want to gain a deeper love and recognition of self. The way the body houses and holds the most eventful and possibly traumatic experiences is miraculous, it’s a warehouse. It's a hub, it’s a repository of the human condition.</p>
 
-  <!-- Video 2 -->
-  <video controls playsinline>
-    <source src="fragrec1.mp4" type="video/mp4">
-    Your browser does not support video.
-  </video>
+    <p>Those experiences and events lay the foundation for what and who we become; the body keeps the score.</p>
 
-</main>
+    <p>As a thicker, taller, dark skinned Black woman in this country, my relationship to beauty recognition has been at times a daunting task. Searching the recesses of my mind, I struggle to find moments of contentment in regards to my body, to my shape, to this temple that houses the most powerful light.</p>
+
+    <p>In this project, I explore the overlapping intersection of emotional trauma—where it’s stored, and how it changes, shifts, and morphs the body.</p>
+
+    <p>Collage allows me to chop, paste, oversize, replace, and rebuild. To take an image and create an entirely new world. Using images to tell truths that words alone cannot hold.</p>
+
+    <p>Where do those words live in your body? How do they affect the way you walk through the world? Where do you carry your trauma?</p>
+
+    <p>This is an undressing of myself to the world. I see butterfly wings, flowers, tentacles, an ocean—layers upon layers I want to unearth to reach my core.</p>
+
+    <p>I don’t know what my core is yet, but I am excited to invite the audience on that journey with me.</p>
+
+    <p>Reclaiming my body in this world means having the ability to take up space in it.</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- IMAGE -->
+  <section>
+    <img
+      src="fragmentedreclaiming.jpg"
+      alt="Fragmented Reclaiming collage artwork"
+      class="hero-image"
+    />
+  </section>
+
+  <!-- VIDEO -->
+  <section class="video-wrapper">
+    <video controls playsinline>
+      <source src="fragmentedreclaiming.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <footer>
+    Fragmented Reclaiming
+  </footer>
 
 </body>
 </html>
+
