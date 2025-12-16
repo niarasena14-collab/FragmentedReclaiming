@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fragmented Reclaiming</title>
 
-  <!-- Fonts: poetic serif + clean sans -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -16,26 +16,49 @@
     }
 
     body {
-      background: #0b0b0b;
-      color: #f1f1f1;
+      background-color: #0b0b0b;
+      color: #f2f2f2;
       font-family: 'Inter', sans-serif;
-      line-height: 1.75;
+      line-height: 1.8;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 1.5rem 4rem;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .image-section {
+      max-width: 1200px;
+      margin: 0 auto 6rem;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     main {
       max-width: 860px;
       margin: 0 auto;
-      padding: 6rem 1.5rem;
-    }
-
-    .statement {
+      padding: 0 1.5rem 6rem;
       font-family: 'Playfair Display', serif;
       font-size: 1.05rem;
-      letter-spacing: 0.01em;
     }
 
-    .statement p {
-      margin-bottom: 1.8rem;
+    main p {
+      margin-bottom: 2rem;
       opacity: 0.95;
     }
 
@@ -43,21 +66,20 @@
       width: 60px;
       height: 1px;
       background: #777;
-      margin: 4rem auto;
+      margin: 4rem auto 6rem;
       opacity: 0.5;
     }
 
     .video-section {
       max-width: 1000px;
-      margin: 0 auto 6rem;
+      margin: 0 auto 5rem;
       padding: 0 1.5rem;
     }
 
     video {
       width: 100%;
-      border-radius: 4px;
-      outline: none;
       background: #000;
+      display: block;
     }
 
     footer {
@@ -68,11 +90,8 @@
     }
 
     @media (max-width: 600px) {
-      main {
-        padding: 4rem 1.25rem;
-      }
-      .statement {
-        font-size: 1rem;
+      header h1 {
+        font-size: 2.2rem;
       }
     }
   </style>
@@ -80,53 +99,59 @@
 
 <body>
 
+  <!-- HEADER -->
+  <header>
+    <h1>Fragmented Reclaiming</h1>
+  </header>
+
+  <!-- IMAGES -->
+  <section class="image-section">
+    <img src="onethrunine.jpg" alt="Fragmented Reclaiming photo series grid" />
+    <img src="tenphotoessay.jpg" alt="Fragmented Reclaiming portrait" />
+  </section>
+
   <!-- ARTIST STATEMENT -->
-  <main class="statement">
-    <p>The human form; malleable, resistant, powerful in the most mysterious ways. I sometimes wonder how much emotional turmoil and trauma changes the physical make up of your build.</p>
+  <main>
+    <p>
+      The human form; malleable, resistant, powerful in the most mysterious ways.
+      I sometimes wonder how much emotional turmoil and trauma changes the physical
+      make up of your build.
+    </p>
 
-    In this project I will explore my own wounds through my body, further deepening my relationship to myself. As someone who tends to shy away from sharing herself, I want to push myself to complete and total transparency, as on the other side of that is the very artist and human I long to be.</p>
+    <p>
+      In this project I explore my own wounds through my body, further deepening my
+      relationship to myself. As someone who tends to shy away from sharing herself,
+      I push toward complete transparency.
+    </p>
 
-    I want to gain a deeper love and recognition of self. The way the body houses and holds the most eventful and possibly traumatic experiences is miraculous, it’s a warehouse. It's a hub, it’s a repository of the human condition.
+    <p>
+      The body is a warehouse — a repository of lived experience. Emotional trauma
+      is stored, shifted, and reshaped through flesh, memory, and form.
+    </p>
 
-    Those experiences and events lay the foundation for what and who we become; the body keeps the score.
+    <p>
+      Collage became my language. The cutting, the pasting, the layering.
+      Creating worlds where images speak what words cannot hold.
+    </p>
 
-    The intimacy in the relationship one has to their body is profound, even if seen in a negative light. As a thicker, taller, dark skinned Black woman in this country, my relationship to beauty recognition has been at times a daunting task.</p>
-
-    Being bigger in shape has always been a point of contention for me. Searching the recesses of my mind, I struggle to find moments of contentment in regards to my body, to my shape, to this temple that houses the most powerful light.
-
-    I believe to some extent or another every living being has or continues to struggle with loving, accepting, and cherishing their bodies.
-
-    In this project, I will be exploring the overlapping intersection of emotional trauma—where it’s stored, and how it changes, shifts, and morphs the body.
-
-    <p>Through this, I hope to gain a greater love, appreciation, and understanding of myself, and of what my body has gone through.</p>
-
-    <p>Collage became my language. The chopping, the pasting, the oversizing, the replacing. Taking images and creating entire worlds—using visuals to tell truths words alone cannot hold.</p>
-
-   Where do those words live in your body? How do they affect the way you walk through the world? Where do you carry that trauma?</p>
-
-  I want to reclaim my vision and my version of myself. This is the undressing of myself to the world.
-
-  I see butterfly wings, flowers, tentacles, an ocean—layers upon layers I want to unearth to reach my core.
-
-    I don’t know what my core is yet, but I am excited to invite the audience on that journey with me.
-
-    <p>Reclaiming my body in this world means having the ability to take up space in it.</p>
+    <p>
+      This is the undressing of myself to the world. Reclaiming my body means
+      taking up space within it.
+    </p>
   </main>
 
   <div class="divider"></div>
-  <img src="onethrunine.jpg" alt="One Thru Nine photo essay" />
-  <img src="tenphotoessay.jpg" alt="Ten photo essay" />
-  <img src="fragmentedreclaiming.jpg" alt="Fragmented Reclaiming" />
 
-  <!-- VIDEO -->
+  <!-- VIDEOS -->
   <section class="video-section">
     <video controls playsinline>
-      <source src="fragrec1.mp4" type="video/mp4">
+      <source src="fragrec1.mp4" type="video/mp4" />
     </video>
   </section>
-    <section class="video-section">
+
+  <section class="video-section">
     <video controls playsinline>
-      <source src="fragmentedreclaimingagain.mp4" type="video/mp4">
+      <source src="fragmentedreclaimingagain.mp4" type="video/mp4" />
     </video>
   </section>
 
